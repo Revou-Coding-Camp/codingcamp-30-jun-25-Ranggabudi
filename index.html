@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniProject RevoU</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+
+
+<body>
+
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="logoProfile.jpg" alt="logoProfile" class="logo">            
+        </div>
+         <!-- Tombol Menu untuk HP -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav>
+            <ul class="menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Profile</a></li>
+                <li><a href="#projects">Portofolio</a></li>
+                <li><a href="#MassageUs">Message Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home">
+  <h2 id="welcome">Selamat datang di website saya</h2>
+  <p>Silakan lihat profil dan portofolio saya di bawah.</p>
+   <p class="intro">
+    Terima kasih telah mengunjungi website portofolio saya.  
+    Di sini Anda dapat melihat profil saya, karya-karya yang pernah saya buat, serta menghubungi saya melalui form yang tersedia.  
+    Saya percaya bahwa setiap proses belajar adalah langkah menuju hal besar berikutnya.
+  </p>
+</section>
+
+
+ <section id="about">
+  <h2 class="section-title">Our Profile</h2>
+  <div class="profile-container">
+    <div class="profile-card">
+      <img src="bangunan1.jpg" alt="Jakarta" class="profile-img">
+      <h3>Jakarta</h3>    
+    </div>
+    <div class="profile-card">
+      <img src="bangunan2.jpg" alt="Bandung" class="profile-img">
+      <h3>Bandung</h3>    
+    </div>
+    <div class="profile-card">
+      <img src="bangunan3.jpg" alt="Surabaya" class="profile-img">
+      <h3>Surabaya</h3>     
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Portfolio</h2>
+  <div class="card-container">
+    
+    <div class="card">
+      <img src="project_tokoOnline.jpg" alt="Project 1">
+      <h3>Website Toko Online</h3>
+      <p>Membangun toko online dengan HTML, CSS, dan JavaScript.</p>    
+    </div>
+
+    <div class="card">
+      <img src="project_landingpage.jpg" alt="Project 2">
+      <h3>Landing Page Produk</h3>
+      <p>Desain halaman produk dengan layout responsif.</p>    
+    </div>
+
+    <div class="card">
+      <img src="project_portofolio.jpg" alt="Project 3">
+      <h3>Portofolio Pribadi</h3>
+      <p>Website personal sebagai latihan pemrograman front-end.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="MassageUs">
+  <h2 class="section-title">Message Us</h2>
+  <div class="form-container">
+
+    <!-- Form Input -->
+    <form id="message-form">
+      <label>Nama :</label>
+      <input type="text" id="nama" placeholder="Nama" required>
+
+      <label>Tanggal Lahir :</label>
+      <input type="date" id="tanggal-lahir" required>
+
+      <label>Jenis Kelamin :</label>
+      <div class="gender">
+        <input type="radio" name="gender" value="Laki - Laki" required> Laki-Laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan
+      </div>
+
+      <label>Pesan :</label>
+      <textarea id="pesan" placeholder="Pesan" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Output -->
+    <div class="form-output" id="output">     
+    </div>
+
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025</p>
+  </footer>
+
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
